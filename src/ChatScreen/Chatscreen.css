@@ -1,0 +1,12 @@
+.wg-drop.country-selector .wgcurrent:after {
+    background-image: none !important;
+    content: none !important;
+}
+
+.wg-drop.country-selector .wgcurrent a {
+    padding-right: 10px !important;
+}
+
+.wg-drop.country-selector a {
+    height: 24px !important;
+}

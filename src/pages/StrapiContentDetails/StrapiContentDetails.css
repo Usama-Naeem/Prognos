@@ -1,0 +1,23 @@
+.content-title {
+  font-family: "Playfair Display";
+}
+.content-description {
+  font-family: "Playfair Display";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  display: flex;
+  align-items: flex-end;
+  color: #09344d;
+}
+
+.image {
+  object-fit: cover;
+  height: 350px;
+  width: 100%;
+}
+
+.article-section {
+  margin: 0 auto;
+}

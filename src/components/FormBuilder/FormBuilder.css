@@ -1,0 +1,108 @@
+.breadcrumb .wizard-page-label {
+  color: black;
+}
+.breadcrumb li:last-child .wizard-page-label {
+  color: blue;
+}
+
+.form-card-header {
+  background: black;
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  color: #ffffff;
+}
+
+.form-card-header-span {
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.drag-container {
+  overflow-x: scroll;
+}
+
+.list-inline {
+  margin-top: 15px;
+}
+
+.wizard-page {
+  overflow-x: scroll;
+}
+
+.staging-text {
+  display: flex;
+  justify-content: center;
+  padding: 2px 0px !important;
+}
+
+.staging-text legend {
+  font-size: 10px;
+}
+
+.staging-row {
+  align-items: center;
+}
+
+.staging-row > .col-xs-2 {
+  flex: 0 0 auto;
+  width: 20%;
+  padding: 2px;
+}
+
+.staging-row > .col-xs-10 {
+  flex: 0 0 auto;
+  width: 80%;
+  padding: 2px;
+}
+
+.header-row .builder-components,
+.nested-header {
+  display: flex;
+}
+
+.header-row .builder-component {
+  flex: 0 0 auto;
+  width: 20%;
+}
+
+.header-row .formio-component:not(.builder-component .formio-component) {
+  flex: 0 0 auto;
+  width: 20%;
+  float: left;
+  text-align: center;
+}
+
+.header-row > .card {
+  padding: 5px;
+  margin-left: 23px;
+}
+
+.options-row > .card {
+  padding: 5px;
+  margin-left: 23px;
+}
+
+.options-row .formio-component-radio > label {
+  display: none;
+}
+
+.options-row .formio-component-radio > .form-radio {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  gap: 0px;
+}
+
+.options-row .form-check {
+  padding-left: 30px;
+}
+
+.options-row .form-check-label {
+  padding: 5px !important;
+}
+
+.options-row .form-check-label span {
+  display: none;
+}

@@ -1,0 +1,15 @@
+export const DASHBOARD = "/*";
+export const DASHBOARDHOME = "/";
+export const ADMIN_SIGNIN = "/admin";
+export const SIGNIN = "/signin";
+export const SIGNUP = "/signup";
+export const FORM_BUILDER = "/form-builder";
+export const ASSESSMENT_FORM = "/assessment/new";
+export const ASSESSMENT_RESULT_ROUTE = "/assessment-result/:id";
+export const STATIC_RESULT_ROUTE = "/result/:id/:role";
+export const STAGE_FORM = "/stage";
+export const STAGE_RESULT = "/stage-result/:id";
+export const INVITED_USER = "/invited-user";
+export const MOBILE_LINK_SIGNIN = "/mobile-signin";
+export const NOT_EXIST = "*";
+export const STAGE_RESULT_ROUTE = (id) => `/stage-result/${id}`;

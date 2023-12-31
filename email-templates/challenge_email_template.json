@@ -1,0 +1,8 @@
+{
+  "Template": {
+    "TemplateName": "challenge_email_template",
+    "SubjectPart": "{{#if subject}} {{subject}} {{else}} App Authorization Code {{/if}}",
+    "HtmlPart": "<h1>Greetings {{name}}!,</h1><br /><p>Your authorization code is {{secret}}. Please copy and paste this into your application</p><br />. {{#if footer}} {{footer}} {{else}} Support Team {{/if}}",
+    "TextPart": "Greetings {{name}},\r\nYour authorization code is {{secret}}. Please copy and paste this into your application.\r\n{{#if footer}} {{footer}} {{else}} Support Team {{/if}}"
+  }
+}

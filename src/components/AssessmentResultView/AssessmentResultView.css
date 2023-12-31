@@ -1,0 +1,10 @@
+.background-gradient {
+  width: 100%;
+  background: url("../../shared/assests/images/Pattern.svg") center center, linear-gradient(180deg, #9d50bb 0%, #6e48aa 100%);
+  min-height: 100vh;
+}
+
+ a.ant-typography-expand{
+  color: #A94FC9 !important;
+  font-size: 16px;
+}

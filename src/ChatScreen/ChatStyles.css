@@ -1,0 +1,37 @@
+.bubble {
+  position: relative;
+  padding: 0.5rem 1rem;
+  border-radius: 1rem;
+  border: none;
+  clear: both;
+}
+.bubble:before {
+  content: "";
+  position: absolute;
+  bottom: -8px;
+  height: 8px;
+  width: 32px;
+}
+.bubble.bubble-left {
+  background: white;
+}
+.bubble.bubble-left:before {
+  border-radius: 0 0 100%;
+  box-shadow: -2px -2px 0 0 white inset, -10px 0 0 0 #fff inset,
+    -12px -2px 0 0 white inset;
+  left: 0;
+}
+.bubble.bubble-right {
+  color: white;
+  background: #a94fc9;
+}
+
+.bubble.bubble-right p a {
+  color: #fff;
+}
+.bubble.bubble-right:before {
+  border-radius: 0 0 0 100%;
+  box-shadow: 2px -2px 0 0 #a94fc9 inset, 10px 0 0 0 #a94fc9 inset,
+    12px -2px 0 0 #a94fc9 inset;
+  right: 0;
+}

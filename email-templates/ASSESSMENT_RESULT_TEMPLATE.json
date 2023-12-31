@@ -1,0 +1,7 @@
+{
+  "Template": {
+    "TemplateName": "ASSESSMENT_RESULT_TEMPLATE",
+    "SubjectPart": "PrognosUs Assessment Result",
+    "HtmlPart": "\n        <p>Hello, <strong>{{name}}!</strong></p>\n        <p>Thanks for filling the assessment form. You can \n          view your result again at <a href=\"{{link}}\" target=\"_blank\"><strong>PrognosUS</strong></a>\n        </p>\n        </br>\n        <p>Regards,</p>\n        <p>Team PrognosUS</p>\n        "
+  }
+}

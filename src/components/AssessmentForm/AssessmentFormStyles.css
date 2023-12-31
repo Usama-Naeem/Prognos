@@ -1,0 +1,299 @@
+:root {
+  --primary: #a94fc9;
+  --gray: #d9d9d9;
+}
+
+#assessment-form {
+  width: 100%;
+  padding: 100px 40px 40px 40px;
+  background: url("../../shared/assests/images/Pattern.svg") center center,
+    linear-gradient(180deg, #9d50bb 0%, #6e48aa 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+#progressBar {
+  background: white;
+  max-width: 1280px;
+  margin: 0 auto;
+  border-radius: 20px;
+  padding: 60px 50px 0px 60px;
+}
+
+#progressBar .ant-progress.ant-progress-line {
+  display: flex;
+  align-items: center;
+}
+
+.ant-progress-text {
+  background: #f5ebf9;
+  color: var(--primary) !important;
+  padding: 10px 16px;
+  width: 130px !important;
+  border-radius: 20px;
+}
+
+.ant-progress-text::after {
+  content: " Completed";
+}
+
+/* hiding error div */
+#assessment-form div.alert.alert-danger {
+  display: none;
+}
+
+.formio-form {
+  max-width: 1280px;
+  margin: 0 auto;
+  min-width: 800px;
+}
+
+.formio-form .wizard-page {
+  overflow: hidden;
+}
+
+.formio-form .wizard-page {
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+  background: white;
+  padding: 10px 0 0 5px;
+}
+
+.formio-wizard-nav-container {
+  background-color: white;
+  padding: 10px;
+  margin: 0 !important;
+}
+
+/* hiding the pagination header */
+.formio-form nav {
+  display: none;
+}
+
+/* margin between the components */
+.formio-form .formio-component {
+  padding: 10px 0px;
+}
+
+.formio-form .text-big {
+  font-size: 32px;
+  font-weight: 500;
+}
+
+.formio-form .col-form-label {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.field-required:after,
+.tab-error::after {
+  color: var(--primary);
+}
+
+/* for radio buttons */
+.formio-form .form-radio.radio {
+  display: flex;
+  gap: 20px;
+}
+
+/* for checkboxes */
+.formio-form .form-radio.radio:has(input[type="checkbox"]) {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.formio-form .form-radio.radio input[type="checkbox"]:checked {
+  background-color: var(--primary);
+}
+
+.formio-form .form-radio.radio div {
+  border: 1px solid var(--gray);
+  border-radius: 0.375rem;
+}
+
+.formio-form .form-radio.radio div label {
+  width: 100%;
+  padding: 5px 10px;
+}
+
+/* change the color of radio button */
+.formio-form .form-radio.radio div input[type="radio"] {
+  border: 2px solid white;
+  box-shadow: 0 0 0 1px black;
+  appearance: none;
+  border-radius: 50%;
+  width: 13px;
+  height: 13px;
+  background-color: #fff;
+  transition: all ease-in 0.2s;
+}
+
+.formio-form .form-radio.radio div input[type="radio"]:checked {
+  background-color: var(--primary);
+  width: 15px;
+  height: 15px;
+  box-shadow: 0 0 0 1px var(--primary);
+}
+
+/* change the border color if radio button is selected */
+.formio-form .form-radio.radio div:has(input[type="radio"]:checked),
+.formio-form .form-radio.radio div:has(input[type="checkbox"]:checked) {
+  border: 2px solid var(--primary);
+  border-radius: 0.375rem;
+  box-shadow: 0px 4px 12px rgba(169, 79, 201, 0.4);
+}
+
+/* wizard buttons */
+.formio-form .btn-wizard-nav-cancel {
+  display: none;
+}
+
+.formio-form .btn-wizard-nav-next {
+  background-color: var(--primary);
+  border: 0;
+  border-radius: 100px;
+  width: 130px;
+  margin: 40px 0px 40px 0px;
+  text-align: left;
+  display: flex;
+  justify-content: space-around;
+}
+
+.formio-form .btn-wizard-nav-next:hover,
+.formio-form .btn-wizard-nav-previous:hover,
+.formio-form .btn-wizard-nav-submit:hover {
+  background-color: var(--primary);
+  opacity: 0.95;
+}
+
+.formio-form .btn-wizard-nav-next::after {
+  content: "⟶";
+  /* margin-left: 5px; */
+}
+
+.formio-form .btn-wizard-nav-previous {
+  background-color: var(--primary);
+  border: 0;
+  border-radius: 100px;
+  width: 130px;
+  margin: 40px 0px 40px 0px;
+  text-align: left;
+  display: flex;
+  justify-content: space-around;
+}
+
+.formio-form .btn-wizard-nav-submit {
+  background-color: var(--primary);
+  border: 0;
+  border-radius: 100px;
+  width: 130px;
+  margin: 40px 0px 40px 0px;
+  text-align: left;
+  display: flex;
+  justify-content: space-around;
+}
+
+.formio-form .btn-wizard-nav-previous::before {
+  content: "⟵";
+  margin-left: 5px;
+}
+
+.formio-form input[type="text"],
+.formio-form input[type="email"],
+.formio-form .formio-component-datetime {
+  width: 50%;
+}
+
+.formio-form .formio-component-datetime input.form-control.input {
+  border-radius: 0.375rem !important;
+}
+
+.formio-form .formio-component-datetime .input-group-append {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.formio-form .formio-component-datetime .input-group-append .input-group-text {
+  background: none;
+  border: none;
+}
+
+.formio-form ul.formio-wizard-nav-container {
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+
+/* tab responsiveness */
+@media (max-width: 1000px) {
+  .formio-form {
+    min-width: 600px;
+  }
+}
+
+/* Mobile responsiveness */
+@media (max-width: 600px) {
+  #assessment-form {
+    padding: 0px 40px 40px 40px;
+  }
+
+  .formio-form {
+    min-width: auto;
+  }
+
+  .formio-form .wizard-page {
+    border-radius: 0;
+    padding: 15px 15px 0px 15px;
+  }
+
+  .formio-form ul.formio-wizard-nav-container {
+    border-radius: 0;
+    flex-direction: row;
+    gap: 20px;
+  }
+
+  .formio-wizard-nav-container {
+    background-color: white;
+    padding: 10px;
+    margin: 0 !important;
+  }
+
+  #progressBar {
+    padding: 20px 10px 10px 10px;
+  }
+
+  .ant-progress-text {
+    width: 50px !important;
+  }
+
+  .ant-progress-text::after {
+    content: "";
+  }
+
+  .formio-form .btn-wizard-nav-next,
+  .formio-form .btn-wizard-nav-previous,
+  .formio-form .btn-wizard-nav-submit {
+    margin: 20px 0px 40px 0px;
+  }
+
+  .formio-form .form-radio.radio {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .formio-form input[type="text"],
+  .formio-form input[type="email"],
+  .formio-form .formio-component-datetime {
+    width: 100%;
+  }
+
+  .formio-form .btn-wizard-nav-next,
+  .formio-form .btn-wizard-nav-previous,
+  .formio-form .btn-wizard-nav-submit {
+    gap: 10px;
+  }
+}

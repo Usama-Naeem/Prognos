@@ -1,0 +1,28 @@
+#sidebar li.ant-menu-item {
+  margin: 0;
+  width: 100%;
+  border-radius: 0;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: #fff;
+}
+
+.ant-menu-item-selected {
+  color: #09344D !important;
+}
+
+#sidebar .ant-menu-submenu-title {
+  color: white;
+  margin: 0;
+  width: 100%;
+  border-radius: 0px;
+}
+
+/* active nav color */
+.ant-menu-item-selected {
+  background-color: #fff !important;
+}
+
+.sidebar-skeleton .ant-skeleton.ant-skeleton-active .ant-skeleton-paragraph>li::after {
+  background: linear-gradient(90deg, rgb(230 217 217 / 46%) 25%, rgba(0, 0, 0, 0.15) 37%, rgba(0, 0, 0, 0.06) 63%);
+}

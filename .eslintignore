@@ -1,0 +1,4 @@
+amplify/*
+.eslintrc.js
+amplify-dependent-resources-ref.d.ts
+amplify-codegen-temp/models/models

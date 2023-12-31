@@ -1,0 +1,14 @@
+.ant-modal-close{
+  margin-top: 6px;
+}
+
+@media(max-width:768px){
+  .ant-modal-close{
+    margin-top: 0px;
+    height: 32px;
+  } 
+
+  .ant-modal-close span{
+    position: relative;
+  }
+}
