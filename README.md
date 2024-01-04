@@ -1,31 +1,48 @@
-# Setup PrognosUs app
-develop: https://develop.d1t5siecg8ir4o.amplifyapp.com/
-Staging: prognosus.emerald-labs.com
-Production: app.prognosus.com
+# Setup Heavenly Match web app
 
-### Step 1
-clone the Github repository and checkout develop branch.
+### Staging: 
+ heavenly-match.emerald-labs.com
+### Production: 
+ app.heavenly-match.com
 
-`git clone git@github.com:EmeraldLabs/prognos-web.git`
 
-### Step 2
-amplify pull the amplify backend environment
+# Amplify Documentation
 
-`amplify pull --appId d1t5siecg8ir4o --envName dev`
+[![DiscordChat](https://img.shields.io/discord/308323056592486420?logo=discord")](https://discord.gg/amplify)
 
-### Step 3
- Select the access keys and enter the ID and secret key shared by me. The owner of the project can create ID and key associated with your email.
+> https://docs.amplify.aws
 
-### Step 4
+### Prerequisites
 
-`yarn install` into the project
+- [Node.js 18.14.0 or later](https://nodejs.org/en/)
+- [npm](https://www.npmjs.com/)
 
-### Step 5
+## Deploy the App
 
- `amplify pull`
- 
-### Step 6
+To automatically deploy the app simply push your code to main branch CI/CD pipelines for Amplify will triggere a deploy to both backend and frontend.
 
-`yarn start `
+> If you wish to manually deploy the app, follow the instructions below.
 
-Testing automation branch changes to clickup
+### Deploy the back end and run the app
+
+1. Clone the repo & install the dependencies
+
+```sh
+~ git clone https://github.com/aws-samples/aws-amplify-quick-notes.git
+~ cd aws-amplify-quick-notes
+~ npm install
+```
+
+2. Initialize and deploy the Amplify project
+
+```sh
+~ amplify init
+? Enter a name for the environment: dev (or whatever you would like to call this env)
+? Choose your default editor: <YOUR_EDITOR_OF_CHOICE>
+? Do you want to use an AWS profile? Y
+
+~ amplify push
+? Are you sure you want to continue? Y
+? Do you want to generate code for your newly created GraphQL API? N
+> We already have the GraphQL code generated for this project, so generating it here is not necessary.
+```
